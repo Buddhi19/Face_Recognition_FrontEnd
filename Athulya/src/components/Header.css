@@ -52,3 +52,7 @@
   color: #fff;
   font-family: "Cinzel Decorative";
 }
+
+@media (max-width: 768px) {
+    /* Styles for screens with a width up to 768 pixels */
+}
