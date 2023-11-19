@@ -1,0 +1,25 @@
+.night-falls-spooky-gothic-skys-icon {
+  position: absolute;
+  top: 145px;
+  left: 0;
+  width: 1920px;
+  height: 1117.6px;
+  object-fit: cover;
+}
+.webapp-child {
+  position: absolute;
+  top: 961px;
+  left: 1256px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  width: 196px;
+  height: 196px;
+  display: none;
+}
+.webapp {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  height: 2000px;
+  overflow: hidden;
+}

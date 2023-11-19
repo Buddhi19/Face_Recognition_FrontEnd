@@ -1,0 +1,112 @@
+@keyframes scale-up {
+  0% {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.leftpane-child {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 788px;
+  height: 1110px;
+  z-index: 0;
+}
+.sorting-hat-png-harry-potter-s {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  margin: 0 !important;
+  top: 44px;
+  left: 171px;
+  width: 443px;
+  height: 394px;
+  background-image: url(/public/1061067907sortinghatpngharrypottersortinghatpng1@2x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  z-index: 1;
+}
+.sorting-hat-png-harry-potter-s:hover {
+  animation: 1s ease 0s infinite normal none scale-up;
+  opacity: 1;
+}
+.e-number,
+.name {
+  position: relative;
+  font-weight: 900;
+  display: inline-block;
+  width: 131px;
+  height: 44px;
+  flex-shrink: 0;
+  text-shadow: 0 7px 4px rgba(0, 0, 0, 0.25);
+}
+.e-number {
+  width: 164px;
+}
+.name-parent {
+  margin: 0 !important;
+  position: absolute;
+  top: 531px;
+  left: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 32px;
+  z-index: 2;
+}
+.welcome-to-electrolizer {
+  position: absolute;
+  margin: 0 !important;
+  top: 805px;
+  left: 38px;
+  font-size: 64px;
+  font-family: Cinzel;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  width: 712px;
+  height: 260px;
+  flex-shrink: 0;
+  z-index: 3;
+}
+.leftpane-inner,
+.leftpane-item,
+.rectangle-div {
+  position: absolute;
+  margin: 0 !important;
+  top: 528px;
+  left: 247px;
+  border-radius: 20px;
+  background-color: #061e2b;
+  width: 496px;
+  height: 50px;
+  z-index: 4;
+}
+.leftpane-inner,
+.rectangle-div {
+  top: 602px;
+  z-index: 5;
+}
+.rectangle-div {
+  top: 679px;
+  z-index: 6;
+}
+.leftpane {
+  position: absolute;
+  top: 150px;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+  text-align: left;
+  font-size: 32px;
+  color: silver;
+  font-family: Inter;
+}
