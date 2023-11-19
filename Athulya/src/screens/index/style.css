@@ -1,0 +1,198 @@
+.index {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.index .div {
+  background-color: #ffffff;
+  height: 2000px;
+  position: relative;
+  width: 1920px;
+}
+
+.index .overlap-group {
+  height: 1110px;
+  left: 0;
+  position: absolute;
+  top: 150px;
+  width: 1920px;
+}
+
+.index .night-falls-spooky {
+  height: 1108px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 1920px;
+}
+
+.index .rectangle {
+  background-color: #ffffff4c;
+  height: 1110px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 788px;
+}
+
+.index .element-sorting {
+  height: 394px;
+  left: 171px;
+  object-fit: cover;
+  position: absolute;
+  top: 44px;
+  transition: all 0.5s ease;
+  width: 443px;
+}
+
+.index .frame {
+  align-items: flex-start;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 32px;
+  left: 64px;
+  position: absolute;
+  top: 531px;
+}
+
+.index .text-wrapper {
+  color: #c0c0c0;
+  font-family: "Inter", Helvetica;
+  font-size: 32px;
+  font-weight: 900;
+  height: 44px;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  text-shadow: 0px 7px 4px #00000040;
+  width: 131px;
+}
+
+.index .text-wrapper-2 {
+  color: #c0c0c0;
+  font-family: "Inter", Helvetica;
+  font-size: 32px;
+  font-weight: 900;
+  height: 44px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  text-shadow: 0px 7px 4px #00000040;
+  width: 164px;
+}
+
+.index .text-wrapper-3 {
+  color: #c0c0c0;
+  font-family: "Inter", Helvetica;
+  font-size: 32px;
+  font-weight: 900;
+  height: 44px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  text-shadow: 0px 7px 4px #00000040;
+  width: 131px;
+}
+
+.index .text-wrapper-4 {
+  color: #ffffff;
+  font-family: "Cinzel", Helvetica;
+  font-size: 64px;
+  font-weight: 400;
+  left: 38px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 804px;
+  width: 712px;
+}
+
+.index .rectangle-2 {
+  background-color: #061d2b;
+  border-radius: 20px;
+  height: 50px;
+  left: 247px;
+  position: absolute;
+  top: 528px;
+  width: 496px;
+}
+
+.index .rectangle-3 {
+  background-color: #061d2b;
+  border-radius: 20px;
+  height: 50px;
+  left: 247px;
+  position: absolute;
+  top: 602px;
+  width: 496px;
+}
+
+.index .rectangle-4 {
+  background-color: #061d2b;
+  border-radius: 20px;
+  height: 50px;
+  left: 247px;
+  position: absolute;
+  top: 679px;
+  width: 496px;
+}
+
+.index .rectangle-5 {
+  background-color: #d9d9d9;
+  height: 632px;
+  left: 893px;
+  position: absolute;
+  top: 262px;
+  width: 922px;
+}
+
+.index .overlap {
+  background: linear-gradient(
+    180deg,
+    rgb(0, 0, 0) 0%,
+    rgba(39.84, 39.84, 39.84, 0.84) 99.99%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  height: 150px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1920px;
+}
+
+.index .logo-eees-main {
+  height: 100px;
+  left: 1354px;
+  object-fit: cover;
+  position: absolute;
+  top: 27px;
+  width: 526px;
+}
+
+.index .DEEE-LOGO-lr {
+  height: 96px;
+  left: 48px;
+  object-fit: cover;
+  position: absolute;
+  top: 27px;
+  width: 478px;
+}
+
+.index .text-wrapper-5 {
+  color: #ffffff;
+  font-family: "Cinzel Decorative", Helvetica;
+  font-size: 76px;
+  font-weight: 400;
+  left: 603px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 25px;
+  width: 714px;
+}
