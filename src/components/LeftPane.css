@@ -1,0 +1,172 @@
+@keyframes scale-up {
+  0% {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.leftpane-child {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 788px;
+  height: 1110px;
+  z-index: 0;
+  opacity: 0;
+}
+.sorting-hat-png-harry-potter-s {
+  rotate: 11deg;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  margin: 0 !important;
+  top: 15px;
+  left: 290px;
+  width: 443px;
+  height: 394px;  
+  background-image: url(/public/1061067907sortinghatpngharrypottersortinghatpng1@2x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  z-index: 3;
+  opacity: 1;
+  animation: scale-up 10s ease infinite;
+}
+
+.sorting-hat-png-harry-potter-s:hover {
+  animation: scaleUpAnimation 1s ease infinite;
+  opacity: 1;
+}
+
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(11deg);
+  }
+  100% {
+    transform: rotate(371deg); /* Rotate to the same position after 30 seconds */
+  }
+}
+
+@keyframes scaleUpAnimation {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+.e-number,
+.name {
+  position: relative;
+  font-weight: 900;
+  display: inline-block;
+  width: 131px;
+  height: 44px;
+  flex-shrink: 0;
+  text-shadow: 0 7px 4px rgba(0, 0, 0, 0.25);
+}
+.e-number {
+  width: 164px;
+}
+.name-parent {
+  margin: 0 !important;
+  position: absolute;
+  top: 531px;
+  left: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 32px;
+  z-index: 2;
+}
+.welcome-to-electrolizer {
+  position: absolute;
+  margin: 0 !important;
+  top: 805px;
+  left: 38px;
+  font-size: 64px;
+  font-family: Cinzel;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  width: 712px;
+  height: 260px;
+  flex-shrink: 0;
+  z-index: 3;
+}
+.leftpane-inner,
+.leftpane-item,
+.rectangle-div {
+  position: absolute;
+  margin: 0 !important;
+  top: 528px;
+  left: 247px;
+  border-radius: 20px;
+  background-color: #061e2b;
+  width: 496px;
+  height: 50px;
+  z-index: 4;
+}
+.leftpane-inner,
+.rectangle-div {
+  top: 602px;
+  z-index: 5;
+}
+.rectangle-div {
+  top: 679px;
+  z-index: 6;
+}
+.leftpane {
+  position: absolute;
+  top: 150px;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+  text-align: left;
+  font-size: 32px;
+  color: silver;
+  font-family: Inter;
+}
+
+@media (max-width: 768px) {
+    /* Styles for screens with a width up to 768 pixels */
+}
+
+.animate-charcter
+{
+  z-index: 3;
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  position: absolute;
+  top: 300px;
+  left: 100px;
+  display: inline-block;
+      font-size: 80px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}

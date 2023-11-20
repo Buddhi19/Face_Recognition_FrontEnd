@@ -1,54 +1,204 @@
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+.night-falls-spooky-gothic-skys-icon {
+  position: absolute;
+  top: 145px;
+  left: 0;
+  width: 1920px;
+  height: 1117.6px;
+  object-fit: cover;
+}
+.webapp-child {
+  position: absolute;
+  top: 961px;
+  left: 1256px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  width: 196px;
+  height: 196px;
+  display: none;
+}
+.webapp {
+  position: relative;
+  background-image: url(/public/394d7a_878db7d9a2014c26bc2feeccf8c94a1d~mv2.gif);
+  background-size: 100%;
+  width: 100%;
+  height: 1100px;
+  overflow: hidden;
+}
+@keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
   }
+  to {
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
+@-webkit-keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to {
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
+@-moz-keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to {
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
+@-webkit-keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to {
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
+.background-container {
+  position: fixed;
+  background-size: 100%;
+  width: 100%;
+  height: 1100px;
+  overflow: hidden;
+}
+
+.stars {
+  background: black url(/public/stars.png) repeat;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  z-index: 0;
+}
+
+.twinkling {
+  width: 10000px;
+  height: 100%;
+  background: transparent url(/public/twinkling.png) repeat;
+  background-size: 1000px 1000px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+  -moz-animation: move-background 70s linear infinite;
+  -ms-animation: move-background 70s linear infinite;
+  -o-animation: move-background 70s linear infinite;
+  -webkit-animation: move-background 70s linear infinite;
+  animation: move-background 70s linear infinite;
+}
+
+.clouds {
+  width: 10000px;
+  height: 100%;
+  background: transparent url(/public/clouds_repeat.png) repeat;
+  background-size: 1000px 1000px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 3;
+  -moz-animation: move-background 150s linear infinite;
+  -ms-animation: move-background 150s linear infinite;
+  -o-animation: move-background 150s linear infinite;
+  -webkit-animation: move-background 150s linear infinite;
+  animation: move-background 150s linear infinite;
+}
+
+img {
+  height: 40vh;
+  width: 40vh;
+  position: absolute;
+  z-index: 3;
+  left: 50px;
+  top: 170px;
+  opacity: 0.5;
+}
+
+.webcam-container {
+    position: relative;
+    top: -150px;
+    left: 93px;
+    z-index: 3;
+  }
+.webapp-item {
+  position: absolute;
+  top: 350px;
+  left: 893px;
+  width: 630px;
+  height: 632px;
+}
+
+@media (max-width: 768px) {
+    /* Styles for screens with a width up to 768 pixels */
+}
+
+.photo-button {
+  width: 100px;
+  height: 100px;
+  top: 73%;
+  left: 71%;
+  margin-top: -50px;
+  margin-left: -50px;
+  position: absolute;
+  z-index: 3;
+}
+.button{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 53%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+  opacity: 0;
+}
+.circle {
+  position: absolute;
+  top: 12%;
+  left: 12%;
+  bottom: 12%;
+  right: 12%;
+  border-radius: 100%;
+  background-color: #ffffff;
+  opacity: 0;
+}
+.ring {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   
-  .title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  .webcam-container {
-    width: 400px;
-    height: 400px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    overflow: hidden;
-  }
-  
-  .webcam-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .button-container {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .button {
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-right: 10px;
-  }
-  
-  .button:hover {
-    background-color: #0056b3;
-  }
-  
-  .button:disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
-  }
+  border-radius: 100%;
+  border: 0.5em solid #ffffff;
+  opacity: 0.8;
+}
+.photo-button .circle, .photo-button .ring {
+  transition: all 0.25s;
+}
+.photo-button:hover .circle {
+  opacity: 1;
+}
+.photo-button:active .ring {
+  opacity: 1;
+}
+.photo-button:active .circle {
+  opacity: 0.5;
+}
+
+.response{
+  position: absolute;
+  margin: 0 !important;
+  top: 528px;
+  left: 247px;
+  border-radius: 20px;
+  background-color: #061e2b;
+  width: 496px;
+  height: 50px;
+  z-index: 4;
+}

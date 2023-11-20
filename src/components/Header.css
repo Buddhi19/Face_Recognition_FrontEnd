@@ -1,0 +1,58 @@
+.header-child {
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    #000,
+    rgba(0, 0, 0, 0.84) 99.99%,
+    rgba(0, 0, 0, 0)
+  );
+  width: 1920px;
+  height: 150px;
+  z-index: 1;
+}
+.deee-logo-lr-0-1-icon,
+.logo-eees-main-1-icon {
+  position: absolute;
+  margin: 0 !important;
+  top: 27px;
+  left: 1354px;
+  width: 526px;
+  height: 100px;
+  object-fit: cover;
+  z-index: 2;
+}
+.deee-logo-lr-0-1-icon {
+  left: 48px;
+  width: 478px;
+  height: 96px;
+  z-index: 1;
+}
+.electrolizer-23 {
+  position: absolute;
+  margin: 0 !important;
+  top: 26px;
+  left: calc(50% - 357px);
+  display: inline-block;
+  width: 714px;
+  height: 98px;
+  flex-shrink: 0;
+  z-index: 3;
+}
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+  text-align: left;
+  font-size: 76px;
+  color: #fff;
+  font-family: "Cinzel Decorative";
+}
+
+@media (max-width: 768px) {
+    /* Styles for screens with a width up to 768 pixels */
+}
