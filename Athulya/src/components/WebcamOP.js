@@ -38,9 +38,9 @@ const WebcamOP = ({ callback }) => {
       console.log('Image successfully posted');
       console.log(response.data);
       callback({
-        name: ' ' + response.data.name,
-        e_number: ' ' + response.data.number,
-        group_number: ' ' + 'i don\'t care'
+        name: response.data.name,
+        e_number: 'E/20/' + response.data.number,
+        group_number: response.data.group
       })
 
 
@@ -55,6 +55,15 @@ const WebcamOP = ({ callback }) => {
     setPicture('');
     setResponseText('');
   };
+
+  const on_click_confirm = () => {
+    callback(
+      (data) => {
+        axios.get('http://127.0.0.1:8000/update_group/' + data.group_number);
+        return data;
+      }
+    )
+  }
   return (
     <>
       {picture === '' ? (
@@ -75,6 +84,7 @@ const WebcamOP = ({ callback }) => {
       ) : (
         <button className='circle' onClick={capture} />
       )}
+      <button className='circle2' onClick={on_click_confirm}></button>
     </>
   )
   // return <div className="webapp-item" />;
