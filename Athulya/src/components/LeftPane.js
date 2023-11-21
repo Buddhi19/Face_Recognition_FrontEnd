@@ -1,6 +1,6 @@
 import "./LeftPane.css";
 
-const LeftPane = () => {
+const LeftPane = ({ call_back }) => {
   return (
     <div className="leftpane">
       <div className="leftpane-child" />

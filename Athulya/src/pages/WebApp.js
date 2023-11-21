@@ -2,6 +2,8 @@ import Header from "../components/Header";
 import LeftPane from "../components/LeftPane";
 import WebcamOP from "../components/WebcamOP";
 import "./WebApp.css";
+import axios from 'axios';
+// import Webcam from 'react-webcam';
 
 const WebApp = () => {
   return (
@@ -13,8 +15,10 @@ const WebApp = () => {
       />
       <Header />
       <LeftPane />
-      <WebcamOP />
-      <div className="webapp-child" />
+      <div className='webapp-child' >
+
+        <WebcamOP />
+      </div>
     </div>
   );
 };
