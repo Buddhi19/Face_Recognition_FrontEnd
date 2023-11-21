@@ -58,7 +58,7 @@
   z-index: 3;
 }
 
-.button{
+.button {
   position: absolute;
   width: 100px;
   height: 100px;
@@ -68,6 +68,7 @@
   margin-left: -50px;
   opacity: 0;
 }
+
 .circle {
   position: absolute;
   top: 12%;
@@ -78,26 +79,32 @@
   background-color: #ffffff;
   opacity: 0;
 }
+
 .ring {
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  
+
   border-radius: 100%;
   border: 0.5em solid #ffffff;
   opacity: 0.8;
 }
-.photo-button .circle, .photo-button .ring {
+
+.photo-button .circle,
+.photo-button .ring {
   transition: all 0.25s;
 }
+
 .photo-button:hover .circle {
   opacity: 1;
 }
+
 .photo-button:active .ring {
   opacity: 1;
 }
+
 .photo-button:active .circle {
   opacity: 0.5;
 }
@@ -114,7 +121,7 @@
   z-index: 3;
 }
 
-.button2{
+.button2 {
   position: absolute;
   width: 100px;
   height: 100px;
@@ -124,6 +131,7 @@
   margin-left: -50px;
   opacity: 0;
 }
+
 .circle2 {
   position: absolute;
   top: 12%;
@@ -134,29 +142,36 @@
   background-color: #d61d1d;
   opacity: 0;
 }
+
 .ring2 {
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  
+
   border-radius: 100%;
   border: 0.5em solid #ffffff;
   opacity: 0.8;
 }
-.photo-button2 .circle2, .photo-button2 .ring2 {
+
+.photo-button2 .circle2,
+.photo-button2 .ring2 {
   transition: all 0.25s;
 }
+
 .photo-button2:hover .circle2 {
   opacity: 1;
 }
+
 .photo-button2:active .ring2 {
   opacity: 1;
 }
+
 .photo-button2:active .circle2 {
   opacity: 0.5;
 }
+
 .btn-square-md {
   width: 100px !important;
   max-width: 100% !important;
@@ -167,5 +182,18 @@
   padding: 0px;
   top: 98%;
   left: 50%;
-  font-size:20px;
-  }
+  font-size: 20px;
+}
+
+.btn-square-md:hover {
+  width: 100px !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  height: 60px !important;
+  text-align: center;
+  background-color: rgb(94, 97, 97);
+  padding: 0px;
+  top: 98%;
+  left: 50%;
+  font-size: 20px;
+}
