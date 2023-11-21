@@ -7,7 +7,7 @@
   height: 632px;
 }
 
-.circle {
+/* .circle {
   position: absolute;
   top: 812px;
   left: 400px;
@@ -15,8 +15,8 @@
   background-color: #ffffff;
   width: 50px;
   height: 50px;
-}
-
+} */
+/* 
 .circle2 {
   position: absolute;
   top: 942px;
@@ -25,9 +25,9 @@
   background-color: #ffffff;
   width: 50px;
   height: 50px;
-}
+} */
 
-.circle:hover {
+/* .circle:hover {
   position: absolute;
   top: 812px;
   left: 400px;
@@ -45,4 +45,115 @@
   background-color: #a5a3a3;
   width: 50px;
   height: 50px;
+} */
+
+.photo-button {
+  width: 100px;
+  height: 100px;
+  top: 93%;
+  left: 35%;
+  margin-top: -50px;
+  margin-left: -50px;
+  position: absolute;
+  z-index: 3;
+}
+
+.button{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 53%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+  opacity: 0;
+}
+.circle {
+  position: absolute;
+  top: 12%;
+  left: 12%;
+  bottom: 12%;
+  right: 12%;
+  border-radius: 100%;
+  background-color: #ffffff;
+  opacity: 0;
+}
+.ring {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  
+  border-radius: 100%;
+  border: 0.5em solid #ffffff;
+  opacity: 0.8;
+}
+.photo-button .circle, .photo-button .ring {
+  transition: all 0.25s;
+}
+.photo-button:hover .circle {
+  opacity: 1;
+}
+.photo-button:active .ring {
+  opacity: 1;
+}
+.photo-button:active .circle {
+  opacity: 0.5;
+}
+
+
+.photo-button2 {
+  width: 100px;
+  height: 100px;
+  top: 93%;
+  left: 61%;
+  margin-top: -50px;
+  margin-left: -50px;
+  position: absolute;
+  z-index: 3;
+}
+
+.button2{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 53%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+  opacity: 0;
+}
+.circle2 {
+  position: absolute;
+  top: 12%;
+  left: 12%;
+  bottom: 12%;
+  right: 12%;
+  border-radius: 100%;
+  background-color: #ffffff;
+  opacity: 0;
+}
+.ring2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  
+  border-radius: 100%;
+  border: 0.5em solid #ffffff;
+  opacity: 0.8;
+}
+.photo-button2 .circle2, .photo-button2 .ring2 {
+  transition: all 0.25s;
+}
+.photo-button2:hover .circle2 {
+  opacity: 1;
+}
+.photo-button2:active .ring2 {
+  opacity: 1;
+}
+.photo-button2:active .circle2 {
+  opacity: 0.5;
 }
