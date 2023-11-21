@@ -12,7 +12,7 @@ function dataURLtoFile(dataurl, filename) {
   }
   return new File([u8arr], filename, { type: mime });
 }
-const WebcamOP = () => {
+const WebcamOP = ({ callback }) => {
 
   const [picture, setPicture] = useState('');
   const [responseText, setResponseText] = useState('');
@@ -29,7 +29,7 @@ const WebcamOP = () => {
       formData.append('file', file);
 
       console.log(formData);
-      const response = await axios.post('http://127.0.0.1:8000/uploadfilereact/', formData, {
+      const response = await axios.post('http://127.0.0.1:8000/uploadfilereact_2/', formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }
@@ -37,6 +37,12 @@ const WebcamOP = () => {
 
       console.log('Image successfully posted');
       console.log(response.data);
+      callback({
+        name: ' ' + response.data.name,
+        e_number: ' ' + response.data.number,
+        group_number: ' ' + 'i don\'t care'
+      })
+
 
       // Set the response data in the state
       setResponseText(JSON.stringify(response.data));
