@@ -20,7 +20,7 @@
   background-color: transparent;
   position: absolute;
   margin: 0 !important;
-  top: 44px;
+  top: 32px;
   left: 171px;
   width: 443px;
   height: 394px;
@@ -50,7 +50,7 @@
 .name-parent {
   margin: 0 !important;
   position: absolute;
-  top: 531px;
+  top: 473px;
   left: 64px;
   display: flex;
   flex-direction: column;
@@ -62,7 +62,7 @@
 .welcome-to-electrolizer {
   position: absolute;
   margin: 0 !important;
-  top: 805px;
+  top: 700px;
   left: 38px;
   font-size: 64px;
   font-family: Cinzel;
@@ -79,7 +79,7 @@
 .rectangle-div {
   position: absolute;
   margin: 0 !important;
-  top: 528px;
+  top: 470px;
   left: 247px;
   border-radius: 20px;
   background-color: #061e2b;
@@ -89,11 +89,11 @@
 }
 .leftpane-inner,
 .rectangle-div {
-  top: 602px;
+  top: 546px;
   z-index: 5;
 }
 .rectangle-div {
-  top: 679px;
+  top: 622px;
   z-index: 6;
 }
 .leftpane {
