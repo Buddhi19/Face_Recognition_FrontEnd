@@ -87,10 +87,9 @@ const WebcamOP = ({ callback }) => {
         <button className='button' onClick={capture} />
       )}
       </div>
-      <div className='photo-button2'>
-        <div className='ring2'/> <div className='circle2' />
-      <button className='button2' onClick={on_click_confirm}></button>
-      </div>
+      <button className='btn-square-md' onClick={on_click_confirm}>
+        CONFIRM
+      </button>
     </>
   )
   // return <div className="webapp-item" />;

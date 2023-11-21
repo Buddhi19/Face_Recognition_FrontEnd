@@ -50,8 +50,8 @@
 .photo-button {
   width: 100px;
   height: 100px;
-  top: 93%;
-  left: 35%;
+  top: 83%;
+  left: 50%;
   margin-top: -50px;
   margin-left: -50px;
   position: absolute;
@@ -106,8 +106,8 @@
 .photo-button2 {
   width: 100px;
   height: 100px;
-  top: 93%;
-  left: 61%;
+  top: 98%;
+  left: 50%;
   margin-top: -50px;
   margin-left: -50px;
   position: absolute;
@@ -131,7 +131,7 @@
   bottom: 12%;
   right: 12%;
   border-radius: 100%;
-  background-color: #ffffff;
+  background-color: #d61d1d;
   opacity: 0;
 }
 .ring2 {
@@ -157,3 +157,15 @@
 .photo-button2:active .circle2 {
   opacity: 0.5;
 }
+.btn-square-md {
+  width: 100px !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  height: 100px !important;
+  text-align: center;
+  background-color: azure;
+  padding: 0px;
+  top: 98%;
+  left: 50%;
+  font-size:20px;
+  }
