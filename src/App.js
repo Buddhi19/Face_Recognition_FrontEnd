@@ -6,6 +6,15 @@ import axios from 'axios';
 import Webcam from 'react-webcam';
 
 
+function dataURLtoFile(dataurl, filename) {
+  var arr = dataurl.split(','), mime = arr[0].match(/:(.*?);/)[1],
+    bstr = atob(arr[1]), n = bstr.length, u8arr = new Uint8Array(n);
+  while (n--) {
+    u8arr[n] = bstr.charCodeAt(n);
+  }
+  return new File([u8arr], filename, { type: mime });
+}
+
 const Profile = () => {
   const [picture, setPicture] = useState('');
   const [responseText, setResponseText] = useState('');
@@ -14,13 +23,15 @@ const Profile = () => {
 
   const capture = React.useCallback(async () => {
     const pictureSrc = webcamRef.current.getScreenshot();
-    console.log(pictureSrc);
+    // console.log(pictureSrc);
 
     try {
       const formData = new FormData();
-      formData.append('face', pictureSrc);
+      const file = dataURLtoFile(pictureSrc, "hello.png")
+      formData.append('file', file);
 
-      const response = await axios.post('http://192.168.252.9:5000/emotion', formData, {
+      console.log(formData);
+      const response = await axios.post('http://127.0.0.1:8000/uploadfilereact/', formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }
@@ -43,45 +54,45 @@ const Profile = () => {
 
   return (
     <div className="background-container">
-      <img src='/moon2.png'/>
-      <div className='stars'/>
-      <div className='twinkling'/>
-      <div className='clouds'/>
+      <img src='/moon2.png' />
+      <div className='stars' />
+      <div className='twinkling' />
+      <div className='clouds' />
       {/* <StarBackground/> */}
       <Header />
       <LeftPane />
       <div className='webcam-container'>
-      <div className="webapp-item">
-        {picture === '' ? (
-          <Webcam
-            mirrored={true}
-            audio={false}
-            height={800}
-            ref={webcamRef}
-            width={750}
-            screenshotFormat="image/jpg"
-          />): (
-          <img src={picture} alt="Captured" />
-        )}
-      </div>
+        <div className="webapp-item">
+          {picture === '' ? (
+            <Webcam
+              mirrored={true}
+              audio={false}
+              height={800}
+              ref={webcamRef}
+              width={750}
+              screenshotFormat="image/jpg"
+            />) : (
+            <img src={picture} alt="Captured" />
+          )}
+        </div>
       </div>
       <div className="photo-button">
-        <div className='ring'/><div className='circle'/>
+        <div className='ring' /><div className='circle' />
         {picture !== '' ? (
           <>
-            <button className="button2" onClick={handleRetake}/>
+            <button className="button2" onClick={handleRetake} />
           </>
         ) : (
-          <button className="button" onClick={capture}/>
+          <button className="button" onClick={capture} />
         )}
       </div>
       <div className='title'>
-      {responseText && <p className="response">{JSON.parse(responseText).emotion}</p>}
-      <div className='animated-title'>
-        <div>
-          <p>Hi</p>
+        {responseText && <p className="response">{JSON.parse(responseText).emotion}</p>}
+        <div className='animated-title'>
+          <div>
+            <p>Hi</p>
+          </div>
         </div>
-      </div>
       </div>
     </div>
   );
